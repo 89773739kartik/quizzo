@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Start Quiz</title>
+</head>
+<link rel="apple-touch-icon" sizes="180x180" href="/media/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/media/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/media/favicon-16x16.png">
+<link rel="manifest" href="/index/site.webmanifest">
+<script>
+function   start() {
+    window.open("\main.html")
+}
+
+
+
+
+</script>
+
+
+
+
+<Style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #1a4574;
+}
+
+::selection{
+    color: #fff;
+    background: #007bff;
+}
+button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(70, 61, 61, 0.2), 
+                0 6px 20px 0 rgba(110, 102, 102, 0.19);
+}
+button{
+    font-size: 25px;
+    font-weight: 500;
+    color: #eff7f0;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: rgb(35, 97, 105);
+    cursor: pointer;
+}
+
+
+
+</Style>
+
+
+
+<body>
+    
+        <button id="star" onclick= start() >Start</button>
+    
+    
+</body>
+</html>

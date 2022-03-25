@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <title>Quiz </title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/media/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/media/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/media/favicon-16x16.png">
+<link rel="manifest" href="/index/site.webmanifest">
+<script src="/js/Script.js"></script>
+  <script>
+function English() {
+  window.open("\englis.html")
+}
+
+function hindi() {
+  window.open("\Hindi.html")
+}
+
+
+function maths() {
+  window.open("\Maths.html")
+}
+
+function science() {
+  window.open("\science.html")
+}
+function Gk() {
+  window.open("\gk.html")
+}
+function comp() {
+  window.open("\comp.html")
+}
+
+
+  </script>
+
+
+
+
+    <style>
+      body{
+       background-color: rgb(26, 51, 51);
+       align-items: center;
+       align-content: center;
+       display: flow-root;
+      }       
+        
+
+      button{
+        border-radius: 78px;
+      }
+      
+      .engg{
+        background-color: #eef3ed;
+      }
+        
+     h1{
+         color: rgb(255, 255, 255);
+         
+    width:500px;
+    background-color: rgb(255, 230, 0);
+    margin: 0 auto;
+    text-align: center;
+}
+  
+
+
+
+
+
+
+ 
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+        
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        /* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+     
+.img1{
+  border-radius: 67px;
+}
+
+        input[type=submit] {
+          background-color: #2af310;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+        .aud{
+          visibility: hidden;
+          background-attachment: fixed;
+          background-color: none;
+          position: absolute;
+          display: flex;
+          padding: 12px 20px;
+          
+
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        .container {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        } 
+        </style>
+
+
+</head>
+<script>
+ Audio.play
+  var myVar;
+  
+  function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+  }
+  
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
+
+
+
+<body>
+  <body onload="myFunction()" style="margin:0;">
+    <body onload="onload()">
+    <div id="loader"></div>
+    
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+      <div class="aud"><embed src="/media/aud1.mp3" autostart=true loop=false visiblity="hidden"></div>
+      <div id="h1"> <h1>Choose Your Subject</h1></div>
+      <div id="eng"><button id ="English" class="engg"><img src="/media/eng.png"  border-radius="34px" height="350px" width="350px"   onclick= "English()"/></button>
+
+      </div>
+    <button id="Hindi "><img src="/media/hin.png"  alt="hindi" height="350px" width="350px" onclick= "hindi()" ></button>
+     <button id="Gk"><img src="/media/ss.png" alt="gk" class="img1" height="350px" width="350px" onclick= "Gk()"></button>
+     <button id="Sci"><img src="/media/sci.png" alt="sci" height="350px" width="350px" onclick= "science()"></button>
+     <button id="maths"><img src="/media/mat.png" alt="maths" height="350px" width="350px"onclick= "maths()" ></button>
+     <button id="comp"><img src="/media/comp.png" alt="comp" height="350px" width="350px" onclick= "comp()"/></button>
+     <h3>Contact Us</h3>
+
+     <div class="container">
+       <form action="/media/action.php">
+         <label for="fname">First Name</label>
+         <input type="text" id="fname" name="firstname" placeholder="Your name..">
+     
+         <label for="lname">Last Name</label>
+         <input type="text" id="lname" name="lastname" placeholder="Your last name..">    
+     
+         <label for="subject">Subject</label>
+         <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+     
+         <input type="submit" value="Submit">
+       </form>
+     </div>
+
+    </div>
+
+  
+
+    
+     
+
+
+
+</body>
+</html>
